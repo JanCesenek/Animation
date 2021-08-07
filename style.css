@@ -1,0 +1,34 @@
+.package {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+}
+
+.slow {
+  animation: movementOfPackage 3s ease-out infinite;
+}
+
+.fast {
+  animation: movementOfPackage 1s ease-out infinite;
+}
+
+@keyframes movementOfPackage {
+  0% {
+    transform: translate(0);
+  }
+
+  30% {
+    transform: translateX(30rem);
+  }
+
+  65% {
+    transform: translate(30rem, 10rem);
+  }
+
+  100% {
+    transform: translate(50rem, 10rem);
+  }
+}
